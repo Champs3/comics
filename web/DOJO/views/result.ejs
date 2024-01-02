@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+    body {
+      background-image: url('/background.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+    <h1 style="position: absolute;top: 12%;left: 20%;">Nice, you earned <%= score %> points!<br>
+      Bring a friend to play and you'll get points <br>
+      matching this round. If your friend wins, they <br>
+      score the same bonus points too.</h1>
+    <form action="/quit" method="post">
+    <button type="submit" style="font-size: 24px;border-radius: 12px;padding: 0.5rem 1rem;position: absolute;left: 20%;bottom: 30%;">Back</button>
+  </form>
+</body>
+</html>
